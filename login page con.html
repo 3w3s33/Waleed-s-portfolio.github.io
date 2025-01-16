@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Portforilo</strong> <span>By waleed shahid.</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="IOT.html">Internet Of Things</a></li>
+							<li><a href="Data analysis.html">Data analysis</a></li>
+							<li><a href="webapplication.html">Web Application</a></li>
+							<li><a href="CRP application.html">CRP Application</a></li>
+							<li><a href="TechEDU webite.html">TechEDU Website</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Generic</h1>
+									</header>
+									<span class="image main"><img src="images/login page con pic.jpg" alt="" /></span>
+									<p>This code defines a React functional component named `Loginform`, which implements a simple login form. It includes two input fields: one for the user’s ID and another for the password. The form is designed to check the entered credentials against hardcoded values, and it redirects the user to different pages based on the credentials provided.
+
+                                        In terms of state management, the component uses the `useState` hook from React to manage three pieces of state: `Id`, `password`, and `error`. The `Id` state holds the value entered by the user in the ID input field, while `password` stores the value from the password field. The `error` state is used to store and display any error message related to invalid credentials.
+                                        
+                                        When the user submits the form by clicking the login button, the `handlesubmit` function is triggered. This function prevents the default form submission behavior by calling `e.preventDefault()`. It then checks whether the entered ID and password match predefined pairs of valid credentials. If the ID is `"3w3s3"` and the password is `"123456"`, the page redirects to `purchase.html`. Similarly, if the ID is `"admin"` and the password is `"123456789"`, the user is redirected to `Inventory.html`. If the credentials do not match either of these valid pairs, an error message `"Invalid ID or Password"` is displayed by updating the `error` state.
+                                        
+                                        The JSX returned by the component contains a `div` with an image, a heading, and the form elements. <br> The image represents the company logo, and the heading prompts the user to log in to "Karachi Trading Co." The form includes two input fields: one for the user ID and one for the password. Both inputs are controlled by the `Id` and `password` state variables, meaning that their values are updated as the user types. Additionally, if there is an error message in the `error` state, it is displayed below the password field as a paragraph. There is also a submit button that triggers the `handlesubmit` function when clicked.
+                                        
+                                        Finally, the `ReactDOM.render()` method is used to render the `Loginform` component into the HTML element with the ID `root`, which is where the component will be displayed on the web page.
+                                        
+                                        Overall, the code creates a functional login form with basic credential validation, state management for user inputs, and error handling. However, the credentials are hardcoded into the frontend, which is not secure for production environments. To improve this, the validation should be handled on the server side, and sensitive information should never be exposed in the frontend code. Additionally, the user experience and interface could be enhanced by adding styles, improving accessibility, and handling loading states during the form submission process.</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">Validsmehmood@hotmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(+92) 334 315 385 3</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Gulshan-E-iqbal<br />
+										Karachi, 75000<br />
+										Pakistan</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Waleed.03</li><li>Design: <a href="www.linkedin.com/in/waleed-shahid03">Waleed Shahid</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

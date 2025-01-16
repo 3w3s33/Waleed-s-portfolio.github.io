@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Portforilo</strong> <span>By waleed shahid.</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="IOT.html">Internet Of Things</a></li>
+							<li><a href="Data analysis.html">Data analysis</a></li>
+							<li><a href="webapplication.html">Web Application</a></li>
+							<li><a href="CRP application.html">CRP Application</a></li>
+							<li><a href="TechEDU webite.html">TechEDU Website</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Generic</h1>
+									</header>
+									<span class="image main"><img src="images/creating a text file .jpg" alt="" /></span>
+									<p>This code is designed to gather user input, format it into a string, and then write that data to a file named data.txt. It prompts the user for their name, age, height, and location, converts the age and height into strings, and writes all of the information into the file. Let’s go through the code in detail.
+
+                                        The first line, file = open('data.txt', "w"), opens the file data.txt in write mode ("w"). This means that if the file already exists, it will be overwritten, and if it doesn’t exist, a new file will be created. The open() function returns a file object, which is stored in the variable file, and this object allows the program to interact with the file (such as writing to it, reading from it, etc.).
+                                        
+                                        The next part of the code prompts the user for their name, age, height, and location using the input() function. The name variable stores the string entered by the user for their name. The age variable stores the integer entered by the user for their age, and int() is used to convert the input into an integer. Similarly, the hight variable stores the float entered by the user for their height, and float() is used to convert the input into a floating-point number. The Location variable stores the string entered by the user for their location.
+                                        
+                                        Next, the age, height, and location are converted to strings so they can be written to the file. This is done using the str() function for each of these variables: age_str = str(age), hight_str = str(hight), and Location_str = str(Location). This is necessary because the write() method in Python can only write strings to a file, so the non-string values need to be converted before they can be written.
+                                        
+                                        The following line, file.write(name+'\n'+age_str+'\n'+hight_str+'\n'+Location_str), writes the collected data into the file. The write() method writes the string to the file, and the + operator is used to concatenate the variables. The \n character is included between each piece of data to ensure that each value appears on a new line in the file. For example, if the user entered the name "John", age "30", height "5.9", and location "New York", the file would look like this: <br>
+                                        (John <br>
+                                        30 <br>
+                                        5.9 <br>
+                                        New York) <br> The file.close() statement is called to close the file after writing. It is important to close the file to ensure that all data is properly saved and to release system resources.
+
+                                        Finally, the program prints the message "data has been stored successfully." to the console to inform the user that their data has been saved to the file.</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">Validsmehmood@hotmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(+92) 334 315 385 3</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Gulshan-E-iqbal<br />
+										Karachi, 75000<br />
+										Pakistan</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Waleed.03</li><li>Design: <a href="www.linkedin.com/in/waleed-shahid03">Waleed Shahid</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Portforilo</strong> <span>By waleed shahid.</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="IOT.html">Internet Of Things</a></li>
+							<li><a href="Data analysis.html">Data analysis</a></li>
+							<li><a href="webapplication.html">Web Application</a></li>
+							<li><a href="CRP application.html">CRP Application</a></li>
+							<li><a href="TechEDU webite.html">TechEDU Website</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Generic</h1>
+									</header>
+									<span class="image main"><img src="images/increpting word con pic.jpg" alt="" /></span>
+									<p>this code demonstrates a simple encryption and decryption system for a word input by the user, using a numeric key. The encrypted word is stored in a file and later read from the file for decryption. Let's go through the code in detail:
+
+                                        The first part of the code initializes several variables. The encrypt_word and decrypt_word variables are both initialized as empty strings, and they will hold the results of the encryption and decryption processes, respectively. The key is set to the string "4387", which is a sequence of digits used in both encryption and decryption. The word variable stores the word that the user enters through the input() function. The variable b is initialized to 0 and is used to iterate through the digits of the key during the encryption process.
+                                        
+                                        In the encryption section, a for loop iterates through each character in the input word. The variable a is the index that accesses each character of the word. Within the loop, there is a check to see if b is less than the length of the key. If this is true, the corresponding key digit at position b is assigned to key_digit, and b is incremented. If b exceeds the length of the key, it is reset to 0, which causes the key to repeat during the encryption process. The character from the word is then converted to its ASCII value using the ord() function. The key_digit is added to the ASCII value, and the resulting value is converted back to a character using the chr() function. This encrypted character is appended to the encrypt_word string.
+                                        
+                                        After the loop completes, the encrypted word is stored in the data.txt file using a with open() statement in write mode ("w"). This ensures that the file is closed after writing. A message is printed confirming that the data has been stored successfully.
+                                        
+                                        Next, the encrypted word is read back from the file. The with open() statement is used again, but this time in read mode ("r"), to retrieve the encrypted word and store it in the text variable.
+                                        
+                                        For the decryption process, a new for loop is used to iterate through each character in the encrypted text. The variable d is used to track the position in the key, similar to how b was used in encryption. If d is less than the length of the key, the corresponding key digit is assigned to key_digit, and d is incremented. When d exceeds the length of the key, it is reset to 0, causing the key to repeat during decryption. The encrypted character is converted to its ASCII value using the ord() function, and the key_digit is subtracted from the ASCII value to reverse the encryption. The resulting value is converted back to a character using chr(), and this decrypted character is appended to the decrypt_word string.
+                                        
+                                        Finally, the decrypted word is printed to the console. At this point, the decrypted word should match the original word that the user entered, since the encryption and decryption processes are symmetric.
+                                        
+                                        The code effectively demonstrates how a simple encryption and decryption system can be implemented using a numeric key. However, it has some limitations and areas for improvement. One issue is that the length of the key is fixed, which may cause problems if the word length exceeds the key length. In such cases, the key is reused, which may not be ideal for encryption. To address this, one could allow the user to enter a key of any length or dynamically generate a key.</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">Validsmehmood@hotmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(+92) 334 315 385 3</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Gulshan-E-iqbal<br />
+										Karachi, 75000<br />
+										Pakistan</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Waleed.03</li><li>Design: <a href="www.linkedin.com/in/waleed-shahid03">Waleed Shahid</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
